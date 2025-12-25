@@ -1,0 +1,369 @@
+PS C:\Users\admin\Desktop\571> python train_densenet121v2.py --data_root "C:\Users\admin\Desktop\571\archive" --amp --use_class_weights --batch_size 32 --num_workers 2 --epochs_last 30 --epochs_last2 25
+Resolved train_dir: C:\Users\admin\Desktop\571\archive\train
+Resolved test_dir: C:\Users\admin\Desktop\571\archive\test
+num_classes: 23
+train batches per epoch: 389
+val batches: 98
+test batches: 126
+Using class-weighted CE + label_smoothing.
+[head] epoch 1/6 | train_loss=3.0544 | val_top1=0.1575
+[head] epoch 2/6 | train_loss=2.8384 | val_top1=0.2025
+[head] epoch 3/6 | train_loss=2.7746 | val_top1=0.2286
+[head] epoch 4/6 | train_loss=2.7318 | val_top1=0.2455
+[head] epoch 5/6 | train_loss=2.6847 | val_top1=0.2363
+[head] epoch 6/6 | train_loss=2.6658 | val_top1=0.2312
+[finetune_last_block] epoch 1/30 | train_loss=2.5450 | val_top1=0.2886
+[finetune_last_block] epoch 2/30 | train_loss=2.3891 | val_top1=0.3026
+[finetune_last_block] epoch 3/30 | train_loss=2.2624 | val_top1=0.3418
+[finetune_last_block] epoch 4/30 | train_loss=2.1726 | val_top1=0.3418
+[finetune_last_block] epoch 5/30 | train_loss=2.0717 | val_top1=0.3476
+[finetune_last_block] epoch 6/30 | train_loss=1.9880 | val_top1=0.3578
+[finetune_last_block] epoch 7/30 | train_loss=1.9205 | val_top1=0.3645
+[finetune_last_block] epoch 8/30 | train_loss=1.8587 | val_top1=0.3830
+[finetune_last_block] epoch 9/30 | train_loss=1.8078 | val_top1=0.3957
+[finetune_last_block] epoch 10/30 | train_loss=1.7328 | val_top1=0.3945
+[finetune_last_block] epoch 11/30 | train_loss=1.6795 | val_top1=0.4107
+[finetune_last_block] epoch 12/30 | train_loss=1.6354 | val_top1=0.4088
+[finetune_last_block] epoch 13/30 | train_loss=1.5797 | val_top1=0.4193
+[finetune_last_block] epoch 14/30 | train_loss=1.5529 | val_top1=0.4279
+[finetune_last_block] epoch 15/30 | train_loss=1.5269 | val_top1=0.4267
+[finetune_last_block] epoch 16/30 | train_loss=1.4670 | val_top1=0.4426
+[finetune_last_block] epoch 17/30 | train_loss=1.4687 | val_top1=0.4353
+[finetune_last_block] epoch 18/30 | train_loss=1.4438 | val_top1=0.4518
+[finetune_last_block] epoch 19/30 | train_loss=1.4116 | val_top1=0.4579
+[finetune_last_block] epoch 20/30 | train_loss=1.3995 | val_top1=0.4665
+[finetune_last_block] epoch 21/30 | train_loss=1.3701 | val_top1=0.4640
+[finetune_last_block] epoch 22/30 | train_loss=1.3500 | val_top1=0.4515
+[finetune_last_block] epoch 23/30 | train_loss=1.3435 | val_top1=0.4547
+[finetune_last_block] epoch 24/30 | train_loss=1.3309 | val_top1=0.4589
+[finetune_last_block] epoch 25/30 | train_loss=1.2929 | val_top1=0.4739
+[finetune_last_block] epoch 26/30 | train_loss=1.2795 | val_top1=0.4732
+[finetune_last_block] epoch 27/30 | train_loss=1.2685 | val_top1=0.4796
+[finetune_last_block] epoch 28/30 | train_loss=1.2640 | val_top1=0.4911
+[finetune_last_block] epoch 29/30 | train_loss=1.2483 | val_top1=0.4713
+[finetune_last_block] epoch 30/30 | train_loss=1.2353 | val_top1=0.4825
+[finetune_last2_blocks] epoch 1/25 | train_loss=1.2061 | val_top1=0.4952
+[finetune_last2_blocks] epoch 2/25 | train_loss=1.1725 | val_top1=0.5083
+[finetune_last2_blocks] epoch 3/25 | train_loss=1.1642 | val_top1=0.5061
+[finetune_last2_blocks] epoch 4/25 | train_loss=1.1401 | val_top1=0.5006
+[finetune_last2_blocks] epoch 5/25 | train_loss=1.1281 | val_top1=0.5099
+[finetune_last2_blocks] epoch 6/25 | train_loss=1.1299 | val_top1=0.5108
+[finetune_last2_blocks] epoch 7/25 | train_loss=1.1293 | val_top1=0.5112
+[finetune_last2_blocks] epoch 8/25 | train_loss=1.1205 | val_top1=0.5143
+[finetune_last2_blocks] epoch 9/25 | train_loss=1.1017 | val_top1=0.5150
+[finetune_last2_blocks] epoch 10/25 | train_loss=1.1195 | val_top1=0.5115
+[finetune_last2_blocks] epoch 11/25 | train_loss=1.1107 | val_top1=0.5207
+[finetune_last2_blocks] epoch 12/25 | train_loss=1.0941 | val_top1=0.5182
+[finetune_last2_blocks] epoch 13/25 | train_loss=1.0925 | val_top1=0.5153
+[finetune_last2_blocks] epoch 14/25 | train_loss=1.0843 | val_top1=0.5214
+[finetune_last2_blocks] epoch 15/25 | train_loss=1.0832 | val_top1=0.5210
+[finetune_last2_blocks] epoch 16/25 | train_loss=1.0729 | val_top1=0.5258
+[finetune_last2_blocks] epoch 17/25 | train_loss=1.0769 | val_top1=0.5271
+[finetune_last2_blocks] epoch 18/25 | train_loss=1.0739 | val_top1=0.5284
+[finetune_last2_blocks] epoch 19/25 | train_loss=1.0573 | val_top1=0.5351
+[finetune_last2_blocks] epoch 20/25 | train_loss=1.0603 | val_top1=0.5233
+[finetune_last2_blocks] epoch 21/25 | train_loss=1.0588 | val_top1=0.5319
+[finetune_last2_blocks] epoch 22/25 | train_loss=1.0475 | val_top1=0.5306
+[finetune_last2_blocks] epoch 23/25 | train_loss=1.0511 | val_top1=0.5335
+[finetune_last2_blocks] epoch 24/25 | train_loss=1.0446 | val_top1=0.5373
+[finetune_last2_blocks] epoch 25/25 | train_loss=1.0431 | val_top1=0.5434
+
+========== FINAL RESULT (DenseNet121 v2) ==========
+best_val_top1: 0.5434
+best_val_top3: 0.7532
+best_val_top5: 0.8332
+best_val_report_acc: 0.5437
+best_val_macro_f1: 0.5270
+best_val_weighted_f1: 0.5403
+---- TEST ----
+test_top1: 0.5501
+test_top3: 0.7579
+test_top5: 0.8373
+test_report_acc: 0.5467
+test_macro_f1: 0.5246
+test_weighted_f1: 0.5447
+===============================================
+
+PS C:\Users\admin\Desktop\571> python train_densenet121_better.py --data_root "C:\Users\admin\Desktop\571\archive" --amp --use_class_weights --batch_size 32 --num_workers 2 --epochs_last 22 --epochs_last2 14 --label_smoothing 0.05
+Resolved train_dir: C:\Users\admin\Desktop\571\archive\train
+Resolved test_dir: C:\Users\admin\Desktop\571\archive\test
+num_classes: 23
+train batches per epoch: 389
+val batches: 98
+test batches: 126
+Using class-weighted soft CE + label_smoothing (supports MixUp/CutMix).
+[head] epoch 1/4 | train_loss=2.6528 | val_top1=0.0641
+[head] epoch 2/4 | train_loss=2.4985 | val_top1=0.1594
+[head] epoch 3/4 | train_loss=2.4295 | val_top1=0.2146
+[head] epoch 4/4 | train_loss=2.3845 | val_top1=0.2382
+[finetune_last_block] epoch 1/22 | train_loss=2.3201 | val_top1=0.2583
+[finetune_last_block] epoch 2/22 | train_loss=2.3388 | val_top1=0.2663
+[finetune_last_block] epoch 3/22 | train_loss=2.2669 | val_top1=0.2768
+[finetune_last_block] epoch 4/22 | train_loss=2.2448 | val_top1=0.2962
+[finetune_last_block] epoch 5/22 | train_loss=2.1535 | val_top1=0.3042
+[finetune_last_block] epoch 6/22 | train_loss=2.1163 | val_top1=0.3115
+[finetune_last_block] epoch 7/22 | train_loss=2.1103 | val_top1=0.3144
+[finetune_last_block] epoch 8/22 | train_loss=2.0838 | val_top1=0.3208
+[finetune_last_block] epoch 9/22 | train_loss=2.0862 | val_top1=0.3284
+[finetune_last_block] epoch 10/22 | train_loss=2.0462 | val_top1=0.3297
+[finetune_last_block] epoch 11/22 | train_loss=2.0399 | val_top1=0.3358
+[finetune_last_block] epoch 12/22 | train_loss=2.0541 | val_top1=0.3418
+[finetune_last_block] epoch 13/22 | train_loss=2.0238 | val_top1=0.3508
+[finetune_last_block] epoch 14/22 | train_loss=2.0198 | val_top1=0.3533
+[finetune_last_block] epoch 15/22 | train_loss=1.9923 | val_top1=0.3594
+[finetune_last_block] epoch 16/22 | train_loss=1.9946 | val_top1=0.3591
+[finetune_last_block] epoch 17/22 | train_loss=1.9828 | val_top1=0.3622
+[finetune_last_block] epoch 18/22 | train_loss=2.0091 | val_top1=0.3616
+[finetune_last_block] epoch 19/22 | train_loss=1.9680 | val_top1=0.3645
+[finetune_last_block] epoch 20/22 | train_loss=1.9597 | val_top1=0.3667
+[finetune_last_block] epoch 21/22 | train_loss=1.9773 | val_top1=0.3699
+[finetune_last_block] epoch 22/22 | train_loss=1.9854 | val_top1=0.3705
+[finetune_last2_blocks] epoch 1/14 | train_loss=1.9478 | val_top1=0.3715
+[finetune_last2_blocks] epoch 2/14 | train_loss=1.9437 | val_top1=0.3734
+[finetune_last2_blocks] epoch 3/14 | train_loss=1.8935 | val_top1=0.3744
+[finetune_last2_blocks] epoch 4/14 | train_loss=1.9453 | val_top1=0.3820
+[finetune_last2_blocks] epoch 5/14 | train_loss=1.9096 | val_top1=0.3846
+[finetune_last2_blocks] epoch 6/14 | train_loss=1.8723 | val_top1=0.3881
+[finetune_last2_blocks] epoch 7/14 | train_loss=1.8595 | val_top1=0.3935
+[finetune_last2_blocks] epoch 8/14 | train_loss=1.8456 | val_top1=0.3957
+[finetune_last2_blocks] epoch 9/14 | train_loss=1.8067 | val_top1=0.4034
+[finetune_last2_blocks] epoch 10/14 | train_loss=1.8733 | val_top1=0.4056
+[finetune_last2_blocks] epoch 11/14 | train_loss=1.8076 | val_top1=0.4101
+[finetune_last2_blocks] epoch 12/14 | train_loss=1.8341 | val_top1=0.4126
+[finetune_last2_blocks] epoch 13/14 | train_loss=1.8292 | val_top1=0.4152
+[finetune_last2_blocks] epoch 14/14 | train_loss=1.8115 | val_top1=0.4174
+
+========== FINAL RESULT (DenseNet121 Better) ==========
+best_val_top1: 0.4174
+best_val_top3: 0.6496
+best_val_top5: 0.7717
+best_val_report_acc: 0.4168
+best_val_macro_f1: 0.4029
+best_val_weighted_f1: 0.4036
+---- TEST ----
+test_top1: 0.4137
+test_top3: 0.6610
+test_top5: 0.7636
+test_report_acc: 0.4130
+test_macro_f1: 0.3913
+test_weighted_f1: 0.4059
+======================================================
+
+Skipped bad samples (train scan): 0
+
+!python train_resnet50.py --data_root "/content/train" --batch_size 32 --target_acc 0.80 --amp --use_class_weights
+/usr/local/lib/python3.12/dist-packages/torch/utils/data/dataloader.py:627: UserWarning: This DataLoader will create 4 worker processes in total. Our suggested max number of worker in current system is 2, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(
+num_classes: 23
+train batches per epoch: 312
+val batches: 78
+test batches: 98
+Downloading: "https://download.pytorch.org/models/resnet50-11ad3fa6.pth" to /root/.cache/torch/hub/checkpoints/resnet50-11ad3fa6.pth
+100% 97.8M/97.8M [00:00<00:00, 137MB/s]
+/content/train_resnet50.py:254: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler(enabled=(args.amp and device.type == "cuda"))
+/content/train_resnet50.py:313: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast(enabled=(args.amp and device.type == "cuda")):
+[head] epoch 001/5 | lr=1.00e-03 | train_loss=2.7312 | train_top1=0.2245 | val_top1=0.2790 | val_top5=0.6433
+[head] epoch 002/5 | lr=1.00e-03 | train_loss=2.3990 | train_top1=0.3060 | val_top1=0.3098 | val_top5=0.6775
+[head] epoch 003/5 | lr=1.00e-03 | train_loss=2.2805 | train_top1=0.3322 | val_top1=0.3024 | val_top5=0.6742
+[head] epoch 004/5 | lr=1.00e-03 | train_loss=2.1864 | train_top1=0.3568 | val_top1=0.2876 | val_top5=0.6610
+[head] epoch 005/5 | lr=1.00e-03 | train_loss=2.1351 | train_top1=0.3675 | val_top1=0.3156 | val_top5=0.6808
+[last] epoch 001/10 | lr=1.00e-04 | train_loss=1.9758 | train_top1=0.4026 | val_top1=0.3783 | val_top5=0.7392
+[last] epoch 002/10 | lr=1.00e-04 | train_loss=1.7140 | train_top1=0.4637 | val_top1=0.3883 | val_top5=0.7478
+[last] epoch 003/10 | lr=1.00e-04 | train_loss=1.5060 | train_top1=0.5145 | val_top1=0.4232 | val_top5=0.7733
+[last] epoch 004/10 | lr=1.00e-04 | train_loss=1.3194 | train_top1=0.5670 | val_top1=0.4261 | val_top5=0.7809
+[last] epoch 005/10 | lr=1.00e-04 | train_loss=1.1566 | train_top1=0.6074 | val_top1=0.4409 | val_top5=0.7810
+[last] epoch 006/10 | lr=1.00e-04 | train_loss=1.0179 | train_top1=0.6405 | val_top1=0.4623 | val_top5=0.8022
+[last] epoch 007/10 | lr=1.00e-04 | train_loss=0.8879 | train_top1=0.6814 | val_top1=0.4688 | val_top5=0.8044
+[last] epoch 008/10 | lr=1.00e-04 | train_loss=0.7993 | train_top1=0.7092 | val_top1=0.4463 | val_top5=0.8003
+[last] epoch 009/10 | lr=1.00e-04 | train_loss=0.7056 | train_top1=0.7402 | val_top1=0.4762 | val_top5=0.8128
+[last] epoch 010/10 | lr=1.00e-04 | train_loss=0.6506 | train_top1=0.7560 | val_top1=0.4859 | val_top5=0.8200
+[last2] epoch 001/5 | lr=3.00e-05 | train_loss=0.4951 | train_top1=0.8060 | val_top1=0.5011 | val_top5=0.8326
+[last2] epoch 002/5 | lr=3.00e-05 | train_loss=0.4238 | train_top1=0.8334 | val_top1=0.5161 | val_top5=0.8266
+[last2] epoch 003/5 | lr=3.00e-05 | train_loss=0.3829 | train_top1=0.8439 | val_top1=0.5160 | val_top5=0.8365
+[last2] epoch 004/5 | lr=3.00e-05 | train_loss=0.3578 | train_top1=0.8558 | val_top1=0.5175 | val_top5=0.8346
+[last2] epoch 005/5 | lr=3.00e-05 | train_loss=0.3136 | train_top1=0.8743 | val_top1=0.5377 | val_top5=0.8422
+
+======== FINAL RESULT (ResNet50) ========
+best_val_top1: 0.5377
+test_top1:     0.5367
+test_top3:     0.7548
+test_top5:     0.8450
+report_acc:    0.5379
+macro_f1:      0.5166
+weighted_f1:   0.5371
+========================================
+
+!python newtrain_resnet50.py --data_root "/content/train" --batch_size 32 --target_acc 0.80 --amp --use_class_weights
+Resolved train_dir: /content/train
+Resolved test_dir: None
+num_classes: 23
+train batches per epoch: 312
+val batches: 78
+test batches: 98
+Using class-weighted CE.
+/content/newtrain_resnet50.py:211: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler() if (amp and device.type == "cuda") else None
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[head] epoch 1/6 | train_loss=2.7283 | val_top1=0.1249
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[head] epoch 2/6 | train_loss=2.4297 | val_top1=0.1514
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[head] epoch 3/6 | train_loss=2.2771 | val_top1=0.1650
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[head] epoch 4/6 | train_loss=2.1801 | val_top1=0.1898
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[head] epoch 5/6 | train_loss=2.1295 | val_top1=0.2011
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[head] epoch 6/6 | train_loss=2.0452 | val_top1=0.2092
+/content/newtrain_resnet50.py:211: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler() if (amp and device.type == "cuda") else None
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last_block] epoch 1/15 | train_loss=1.7055 | val_top1=0.2780
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last_block] epoch 2/15 | train_loss=1.3006 | val_top1=0.3124
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last_block] epoch 3/15 | train_loss=1.0049 | val_top1=0.3385
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last_block] epoch 4/15 | train_loss=0.7840 | val_top1=0.3598
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last_block] epoch 5/15 | train_loss=0.6479 | val_top1=0.3741
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last_block] epoch 6/15 | train_loss=0.5488 | val_top1=0.3892
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last_block] epoch 7/15 | train_loss=0.4654 | val_top1=0.3905
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last_block] epoch 8/15 | train_loss=0.4197 | val_top1=0.4162
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last_block] epoch 9/15 | train_loss=0.3596 | val_top1=0.4294
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last_block] epoch 10/15 | train_loss=0.3201 | val_top1=0.4464
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last_block] epoch 11/15 | train_loss=0.3089 | val_top1=0.4388
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last_block] epoch 12/15 | train_loss=0.2679 | val_top1=0.4633
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last_block] epoch 13/15 | train_loss=0.2587 | val_top1=0.4668
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last_block] epoch 14/15 | train_loss=0.2435 | val_top1=0.4758
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last_block] epoch 15/15 | train_loss=0.2339 | val_top1=0.4706
+/content/newtrain_resnet50.py:211: FutureWarning: `torch.cuda.amp.GradScaler(args...)` is deprecated. Please use `torch.amp.GradScaler('cuda', args...)` instead.
+  scaler = torch.cuda.amp.GradScaler() if (amp and device.type == "cuda") else None
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last2_blocks] epoch 1/10 | train_loss=0.1825 | val_top1=0.4908
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last2_blocks] epoch 2/10 | train_loss=0.1610 | val_top1=0.4937
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last2_blocks] epoch 3/10 | train_loss=0.1359 | val_top1=0.5104
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last2_blocks] epoch 4/10 | train_loss=0.1312 | val_top1=0.5130
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last2_blocks] epoch 5/10 | train_loss=0.1194 | val_top1=0.5109
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last2_blocks] epoch 6/10 | train_loss=0.1177 | val_top1=0.5114
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last2_blocks] epoch 7/10 | train_loss=0.1047 | val_top1=0.5242
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last2_blocks] epoch 8/10 | train_loss=0.0977 | val_top1=0.5056
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last2_blocks] epoch 9/10 | train_loss=0.1017 | val_top1=0.5257
+/content/newtrain_resnet50.py:182: FutureWarning: `torch.cuda.amp.autocast(args...)` is deprecated. Please use `torch.amp.autocast('cuda', args...)` instead.
+  with torch.cuda.amp.autocast():
+[finetune_last2_blocks] epoch 10/10 | train_loss=0.0878 | val_top1=0.5276
+
+========== FINAL RESULT (ResNet50) ==========
+best_val_top1: 0.5276
+best_val_top3: 0.7511
+best_val_top5: 0.8282
+best_val_report_acc: 0.5273
+best_val_macro_f1: 0.5061
+best_val_weighted_f1: 0.5232
+---- TEST ----
+test_top1: 0.5312
+test_top3: 0.7492
+test_top5: 0.8377
+test_report_acc: 0.5297
+test_macro_f1: 0.5126
+test_weighted_f1: 0.5264
+===========================================
+
+PS C:\Users\admin\Desktop\571> python train_vgg19.py --data_root "C:\Users\admin\Desktop\571\archive" --amp --use_class_weights --batch_size 16 --num_workers 2
+Resolved train_dir: C:\Users\admin\Desktop\571\archive\train
+Resolved test_dir: C:\Users\admin\Desktop\571\archive\test
+num_classes: 23
+train batches per epoch: 777
+val batches: 195
+test batches: 251
+Downloading: "https://download.pytorch.org/models/vgg19-dcbb9e9d.pth" to C:\Users\admin/.cache\torch\hub\checkpoints\vgg19-dcbb9e9d.pth
+100.0%
+Using class-weighted CE + label_smoothing.
+[head] epoch 1/6 | train_loss=2.9722 | val_top1=0.1856
+[head] epoch 2/6 | train_loss=3.2247 | val_top1=0.0990
+[head] epoch 3/6 | train_loss=3.1240 | val_top1=0.1157
+[head] epoch 4/6 | train_loss=3.0290 | val_top1=0.1378
+[head] epoch 5/6 | train_loss=2.8256 | val_top1=0.1686
+[head] epoch 6/6 | train_loss=2.7138 | val_top1=0.1721
+[finetune_last_layers] epoch 1/14 | train_loss=2.6239 | val_top1=0.1869
+[finetune_last_layers] epoch 2/14 | train_loss=2.5165 | val_top1=0.2308
+[finetune_last_layers] epoch 3/14 | train_loss=2.3286 | val_top1=0.2545
+[finetune_last_layers] epoch 4/14 | train_loss=2.1320 | val_top1=0.2897
+[finetune_last_layers] epoch 5/14 | train_loss=1.9463 | val_top1=0.3090
+[finetune_last_layers] epoch 6/14 | train_loss=1.7312 | val_top1=0.3266
+[finetune_last_layers] epoch 7/14 | train_loss=1.6017 | val_top1=0.3385
+[finetune_last_layers] epoch 8/14 | train_loss=1.4607 | val_top1=0.3715
+[finetune_last_layers] epoch 9/14 | train_loss=1.3516 | val_top1=0.3849
+[finetune_last_layers] epoch 10/14 | train_loss=1.2436 | val_top1=0.3894
+[finetune_last_layers] epoch 11/14 | train_loss=1.1708 | val_top1=0.4045
+[finetune_last_layers] epoch 12/14 | train_loss=1.1302 | val_top1=0.4083
+[finetune_last_layers] epoch 13/14 | train_loss=1.0810 | val_top1=0.4119
+[finetune_last_layers] epoch 14/14 | train_loss=1.0694 | val_top1=0.4141
+
+========== FINAL RESULT (VGG19) ==========
+best_val_top1: 0.4141
+best_val_top3: 0.6462
+best_val_top5: 0.7603
+best_val_report_acc: 0.4142
+best_val_macro_f1: 0.3968
+best_val_weighted_f1: 0.4110
+---- TEST ----
+test_top1: 0.4071
+test_top3: 0.6392
+test_top5: 0.7415
+test_report_acc: 0.4050
+test_macro_f1: 0.3754
+test_weighted_f1: 0.4023
+=========================================
+
+Skipped bad samples (train scan): 0
